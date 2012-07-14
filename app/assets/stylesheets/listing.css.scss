@@ -1,0 +1,50 @@
+// Place all the styles related to the listing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* Styles for main page */
+#banner {
+background: #6d7fa7;
+padding-top:
+10px;
+padding-bottom:
+10px;
+border-bottom:
+2px solid;
+font: small-caps
+44px "Times New Roman", serif;
+color: white;
+text-align:
+center;
+
+}
+#banner img {
+float: left;
+}
+#columns {
+background: white;
+}
+#main {
+margin-left:
+17em;
+padding-top:
+4ex;
+padding-left:
+2em;
+background: white;
+}
+#side {
+float: right;
+padding-top:
+4em;
+padding-left:
+1em;
+padding-bottom:
+40em;
+width: 5em;
+background: orange;
+}
+#side a {
+color: white;
+font-size:
+small;
+}

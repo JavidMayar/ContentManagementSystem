@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:  
+  title: MyString
+  permalink: MyString
+  body: MyText
+  created_at: 2011-08-01 23:30:24
+  updated_at: 2011-08-01 23:30:24
+  
+two:
+  title: MyString
+  permalink: MyString
+  body: MyText
+  created_at: 2011-08-01 23:30:24
+  updated_at: 2011-08-01 23:30:24
+  
+ruby:
+  title: Programming Ruby
+  permalink: www.google.com
+  body: Ruby is the best programing language
+  created_at: 2011-08-01 23:30:24
+  updated_at: 2011-08-01 23:30:24

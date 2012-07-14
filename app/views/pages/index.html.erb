@@ -1,0 +1,33 @@
+<h1 id="header">Listing pages</h1>
+<table border="4" cellspacing="6"bordercolor="black" cellpadding="10" style="margin-left:46px;">
+  <tr class="tr_color">
+    <th background="blue">Title</th>
+    <th>Permalink</th>
+    <th>Body</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th>Actions</th>
+  </tr>
+
+<% @pages.each do |page| %>
+    <tr>
+    <td><%= page.title %></td>
+    <td><%= page.permalink %></td>
+    <td><%= page.body %></td>
+    <td><%= page.created_at %></td>
+    <td><%= page.updated_at %></td>
+    <td>
+    	<table>
+    	<tr><%= link_to image_tag('show.jpg', :calss=> 'list.image'), page %></tr>
+ 
+  <tr><%= link_to image_tag('edit.jpg', :class => 'list_image'), edit_page_path(page) %></tr>
+    <tr><%= link_to image_tag('delete.jpg', :class=> 'list_image'), page, confirm: 'Are you sure?', method: :delete %></tr>
+   </table>
+    </td>
+    </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to image_tag('page.jpg', :class => 'list.image'), new_page_path %>

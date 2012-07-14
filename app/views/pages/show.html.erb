@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @page.title %>
+</p>
+
+<p>
+  <b>Permalink:</b>
+  <%= @page.permalink %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @page.body %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @page.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @page.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>

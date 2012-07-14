@@ -1,0 +1,13 @@
+<% if notice %>
+<p id="notice" ><%= notice %></p>
+<% end %>
+<h1>List of Pages:</h1>
+<% @pages.each do |page| %>
+<div class="entry" >
+<h3><%= page.title %></h3>
+<%= sanitize(page.body) %>
+</div>
+<div>
+<p><%= page.permalink%></p>
+</div>
+<% end %>

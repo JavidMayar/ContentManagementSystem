@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cms</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+	<body id="listing" >
+<div id="banner" >
+<%= image_tag("logo.jpg") %>
+
+<%= @page_title || "Content Mangement System" %>
+</div>
+<div id="columns" >
+<div id="side" >
+<a href="http://www...." >Home</a><br />
+<a href="http://www..../faq" >Questions</a><br />
+<a href="http://www..../news" >News</a><br />
+<a href="http://www..../contact" >Contact</a><br />
+</div>
+	<div class="pages">
+<%= yield %>
+</div>
+</body>
+</html>
